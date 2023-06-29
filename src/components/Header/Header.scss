@@ -15,17 +15,18 @@ nav.header-nav {
 }
 
 .header-select-city {
-    border: none;
-    box-shadow: none;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    margin: 0 20px;
-    color: var(--grey-400);
-    height: fit-content;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-family: var(--default-font);
+  border: none;
+  box-shadow: none;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  color: var(--grey-400);
+  height: fit-content;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--default-font);
+  padding: 0.5rem;
 }
 
 .header-dropdown {
@@ -55,5 +56,15 @@ nav.header-nav {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.header-modal {
+  p {
+    margin: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--secondary-color);
   }
 }

@@ -50,6 +50,7 @@ function Header() {
           Selecionar cidade
         </Button>
         <Modal
+          className="header-modal"
           onCancel={closeModal}
           title={
             <p>
