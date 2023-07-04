@@ -22,6 +22,7 @@
   background-position: top right;
   display: flex;
   flex-direction: column;
+  transition-duration: 300ms;
 
   img {
     width: 40px;
@@ -57,6 +58,38 @@
       cursor: pointer;
     }
   }
+
+  &.rotated {
+    transform: rotateY(-180deg);
+    background-image: none;
+
+    img {
+      display: none;
+    }
+
+    svg {
+      left: 10px;
+    }
+
+    .feature-card-title {
+      display: none;
+    }
+
+    .feature-card-description {
+      display: block;
+      transform: rotateY(-180deg);
+    }
+  }
+}
+
+.feature-card-description {
+  margin-top: 10px;
+  display: none;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  width: 80%;
+  align-self: flex-end;
 }
 
 .main-text {
