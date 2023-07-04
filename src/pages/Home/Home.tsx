@@ -1,77 +1,13 @@
 import "./Home.scss";
 import React from "react";
 import Header from "components/Header/Header";
-import FeatureCard from "components/FeatureCard/FeatureCard";
-import { IFeatureCardProps } from "components/FeatureCard/FeatureCard";
 import DocumentVerifiedIcon from "assets/icons/documentVerified.svg";
 import FacialVerifIcon from "assets/icons/facialVerfication.svg";
-import FirstFeatureCardBg from "assets/icons/first-draw-vector.svg";
-import SecondFeatureCardBg from "assets/icons/second-draw-vector.svg";
+import MediaCompIcon from "assets/icons/mediaComparation.svg";
+import BlogIcon from "assets/icons/blogLogo.svg";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 function Home() {
-  const FeatureCardItems: IFeatureCardProps[] = [
-    {
-      title: (
-        <p>
-          Acompanhantes com <strong>documentos verificados</strong>
-        </p>
-      ),
-      icon: DocumentVerifiedIcon,
-      description: (
-        <p>
-          <strong>Todo profissional</strong> passa por uma verificação de seus
-          documentos
-        </p>
-      ),
-      bgImage: FirstFeatureCardBg,
-    },
-    {
-      title: (
-        <p>
-          Verificação <strong>facial</strong>
-        </p>
-      ),
-      icon: FacialVerifIcon,
-      description: (
-        <p>
-          O Rosto precisa ser <strong>sempre igual</strong> ao do documento
-          registrado.
-        </p>
-      ),
-      bgImage: SecondFeatureCardBg,
-    },
-    {
-      title: (
-        <p>
-          Acompanhantes com <strong>documentos verificados</strong>
-        </p>
-      ),
-      icon: DocumentVerifiedIcon,
-      description: (
-        <p>
-          <strong>Todo profissional</strong> passa por uma verificação de seus
-          documentos
-        </p>
-      ),
-      bgImage: FirstFeatureCardBg,
-    },
-    {
-      title: (
-        <p>
-          Acompanhantes com <strong>documentos verificados</strong>
-        </p>
-      ),
-      icon: DocumentVerifiedIcon,
-      description: (
-        <p>
-          <strong>Todo profissional</strong> passa por uma verificação de seus
-          documentos
-        </p>
-      ),
-      bgImage: FirstFeatureCardBg,
-    },
-  ];
-
   return (
     <React.Fragment>
       <Header />
@@ -87,9 +23,36 @@ function Home() {
             </p>
           </div>
           <div className="feature-cards">
-            {FeatureCardItems.map((featureCard) => (
-              <FeatureCard {...featureCard} />
-            ))}
+            <div className="feature-card">
+              <img src={DocumentVerifiedIcon} alt="documentos verificados" />
+              <p className="feature-card-title">
+                Acompanhantes com <strong>documentos verificados</strong>
+              </p>
+              <BiRightArrowAlt size={30} />
+            </div>
+            <div className="feature-card">
+              <img src={FacialVerifIcon} alt="documentos verificados" />
+              <p className="feature-card-title">
+                Verificação <strong>facial</strong>
+              </p>
+              <BiRightArrowAlt size={30} />
+            </div>
+            <div className="feature-card">
+              <img src={MediaCompIcon} alt="documentos verificados" />
+              <p className="feature-card-title">
+                Mídia de
+                <br />
+                <strong>comparação 360°</strong>
+              </p>
+              <BiRightArrowAlt size={30} />
+            </div>
+            <div className="feature-card">
+              <img src={BlogIcon} alt="documentos verificados" />
+              <p className="feature-card-title">
+                Acesse nosso Blog
+                <br /> e <u>saiba mais</u>
+              </p>
+            </div>
           </div>
         </section>
       </main>
