@@ -1,0 +1,32 @@
+.home-section-1{
+    padding: 70px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.main-text {
+    width: 40%;
+
+  .main-text-title {
+    line-height: 64px;
+    font-weight: 600;
+    font-size: 3.25rem;
+
+    #fatal-model{
+        color: var(--primary-color);
+    }
+  }
+
+  .main-text-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+  }
+}

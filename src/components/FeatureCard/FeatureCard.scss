@@ -1,0 +1,22 @@
+.feature-card {
+  width: 255px;
+  transition-duration: 300ms;
+  border: 1px solid var(--grey-200);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  .ant-card-body {
+    padding: 0.5rem 1rem 0 1rem;
+  }
+}
+
+.feature-card-content {
+  font-family: var(--default-font);
+  color: var(--secondary-color);
+  font-size: 1rem;
+  line-height: 1.25rem;
+
+  strong {
+    font-weight: 500;
+  }
+}
